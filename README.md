@@ -1,9 +1,3 @@
-# React Job Tracker App
-This app was built to get more comfortable using react and utilizing reacts state management via web hooks and JSX <br /> <br />
-
-***Still need to implement a backend***
-<br /><br />
-
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

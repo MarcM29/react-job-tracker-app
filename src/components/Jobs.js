@@ -3,8 +3,12 @@ const Jobs = ({jobs, onDelete, onToggle}) => {
     
     return (
         <>
-          {jobs.map((job)=> (
-          <Job key={job.id} job={job} onDelete={onDelete} onToggle={onToggle} />
+          {jobs.map((job, index)=> (
+          <Job 
+          key={index} 
+          job={job} 
+          onDelete={onDelete} 
+          onToggle={onToggle} />
           ))}  
         </>
     )
