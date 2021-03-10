@@ -10,7 +10,7 @@
       "id": 2,
       "text": "Check LinkedIn for new job postings",
       "day": "March 8th at 1:00pm",
-      "reminder": true
+      "reminder": false
     }
   ]
 }

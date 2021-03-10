@@ -21,6 +21,12 @@ function App() {
     return data
   }
 
+  const fetchJob = async (id) => {
+    const res = await fetch(`http://localhost:5000/jobs/${id}`)
+    const data = await res.json()
+    return data
+  }
+
 //Add job
 const addJob = async (job) => {
   const res = await fetch('http://localhost:5000/jobs', {
@@ -45,9 +51,21 @@ const addJob = async (job) => {
   }
 
 //Toggle reminder
-  const toggleReminder = (id) => {
+  const toggleReminder = async(id) => {
+    const jobToToggle = await fetchJob(id)
+    const updatedJob = {...jobToToggle, reminder: !jobToToggle.reminder}
+    const res = await fetch(`http://localhost:5000/jobs/${id}`,{
+    method: 'PUT',
+    headers: {
+      'Content-type': 'application/json'
+    },
+    body: JSON.stringify(updatedJob)
+    })
+
+    const data = await res.json()
+
     setJobs(
-      jobs.map((job)=>job.id===id ? {...job, reminder: !job.reminder} : job))
+      jobs.map((job)=>job.id===id ? {...job, reminder: data.reminder} : job))
   }
 
   return (
