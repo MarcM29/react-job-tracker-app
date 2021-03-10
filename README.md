@@ -1,3 +1,6 @@
+# React Job Tracker App
+This app was built to get more comfortable building a small-scale full stack application (front + back end) by using react and utilizing reacts state management via web hooks and JSX. This app also has a mock back end (JSON-server) which allows any changes made by a user to be saved to the back end. <br /> <br />
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
