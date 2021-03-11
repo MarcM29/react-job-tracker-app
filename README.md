@@ -1,6 +1,7 @@
-# React Job Tracker App
-This app was built to get more comfortable building a small-scale full stack application (front end + back end) by using react and utilizing reacts state management via web hooks and JSX. This app also has a mock back end (JSON-server) which allows any changes made by a user to be saved to the back end and accessed via calls/requests to the back end - (no data is lost if user refreshes or leaves the page) <br /> <br />
+# React Job Tracker App (REACT JS, JSON-server API)
+This app was built to get more comfortable building a small-scale full stack application (front end + back end) by using react and utilizing reacts state management (web hooks, JSX, props, etc.). This app also has a mock back end (JSON-server REST API) which allows any changes made by a user to be saved to the back end and accessed via calls/requests to the back end - (no data is lost if user refreshes or leaves the page) <br /> <br />
 Data is stored in db.json file and is updated upon any change in data <br />
+JSON-server REST API used: https://github.com/typicode/json-server <br />
 
 # Getting Started with Create React App
 
